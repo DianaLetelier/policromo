@@ -1,7 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+.metal {
+  background-color: purple;
+}
+.pop {
+  background-color: pink;
+}
+.rock {
+  background-color: black;
+}
+.punk {
+  background-color: red;
+}
+.indie {
+  background-color: blue;
+}
+.electronica {
+  background-color: green;
+}
+.entrevistas {
+  background-color: orange;
+}
+
