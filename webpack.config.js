@@ -6,25 +6,29 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
   },
-  mode: 'development', // Cambia a 'production' si es el entorno final.
+  devServer: {
+    static: path.join(__dirname, 'public'),
+    compress: true,
+    port: 3000,
+    allowedHosts: 'all',
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
       },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
     ],
   },
-  devServer: {
-    static: path.join(__dirname, 'public'),
-    compress: true,
-    port: 3000,
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 };
+

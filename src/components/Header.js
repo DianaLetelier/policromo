@@ -1,11 +1,12 @@
+// src/components/Header.js
 import React from 'react';
-import '../styles/main.css'; // Importación del CSS
 
-const Header = () => (
-  <header className="header">
-    <h1>POLICROMO</h1>
-  </header>
-);
+const Header = () => {
+  return (
+    <header>
+      <h1>Policromo</h1>
+    </header>
+  );
+};
 
 export default Header;
-

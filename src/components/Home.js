@@ -1,11 +1,17 @@
+// src/components/Home.js
 import React from 'react';
+import Header from './Header';
+import Navigation from './Navigation';
+import Section from './Section';
+import Footer from './Footer';
 
 const Home = () => {
-  console.log("Home component loaded");
   return (
     <div>
-      <h1>Bienvenido a Policromo</h1>
-      <p>Contenido de prueba</p>
+      <Header />
+      <Navigation />
+      <Section />
+      <Footer />
     </div>
   );
 };

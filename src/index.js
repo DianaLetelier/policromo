@@ -1,13 +1,15 @@
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './styles/main.css';
 import Home from './components/Home';
 
-console.log("Rendering React App...");
+// Creación del root usando React 18.
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <Home />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
+
