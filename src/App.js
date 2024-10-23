@@ -1,12 +1,21 @@
 import React from 'react';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import GenreSections from './components/GenreSections';
+import Footer from './components/Footer';
+import './styles/main.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Bienvenido a Policromo</h1>
-      <p>Explora los diferentes estilos musicales aquí.</p>
+    <div className="app">
+      <Header />
+      <Navigation />
+      <GenreSections />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
+
+

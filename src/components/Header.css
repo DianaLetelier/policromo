@@ -1,0 +1,97 @@
+/* Contenedor principal del header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: black;
+    position: relative;
+  }
+  
+  /* Puntos de colores en horizontal */
+  .header-icons {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Estilo del título POLICROMO centrado */
+  .header-title {
+    font-size: 8rem; /* Más grande */
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .poli {
+    color: white;
+  }
+  
+  .cromo {
+    background: linear-gradient(90deg, pink 0%, magenta 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Contenedor de la navegación y botones */
+  .header-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  
+  /* Navegación */
+  .header-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .header-nav a:hover {
+    color: pink;
+  }
+  
+  /* Botones */
+  .header-options {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .header-options button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .header-options button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
