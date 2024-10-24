@@ -21,15 +21,13 @@ const Header = () => (
     {/* Navegación y opciones */}
     <div className="header-right">
       <nav className="header-nav">
-        <a href="#">Metal</a>
-        <a href="#">News</a>
-        <a href="#">Interviews</a>
-        <a href="#">Events</a>
+        <a href="#">Géneros</a>
+        <a href="#">Entrevistas</a>
+        <a href="#">Redes Sociales</a>
+        <a href="#">Eventos</a>
       </nav>
       <div className="header-options">
-        <button>Login</button>
-        <button>Merchandising</button>
-        <button>Contacto</button>
+        <button>Contáctanos</button>
       </div>
     </div>
   </header>
