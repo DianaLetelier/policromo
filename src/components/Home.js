@@ -1,32 +1,27 @@
+// src/components/Home.js
 import React from 'react';
+import Header from './Header';
+import GenreSections from './GenreSections';
+import Footer from './Footer';
 
 const Home = () => (
-  <main className="home">
-    <section className="genre-section">
-      <h2>Metal</h2>
-      <p>Explora lo mejor del Metal.</p>
-    </section>
-    <section className="genre-section">
-      <h2>Pop</h2>
-      <p>Las canciones más populares.</p>
-    </section>
-    <section className="genre-section">
-      <h2>Rock</h2>
-      <p>Lo mejor del Rock.</p>
-    </section>
-    <section className="genre-section">
-      <h2>Punk</h2>
-      <p>Vibras punk para el alma.</p>
-    </section>
-    <section className="genre-section">
-      <h2>Indie</h2>
-      <p>Música independiente destacada.</p>
-    </section>
-    <section className="genre-section">
-      <h2>Electronic</h2>
-      <p>Beats electrónicos del momento.</p>
-    </section>
-  </main>
+  <div className="app">
+    <Header />
+    <div id="entrevistas" className="content-section">
+      <h2>Entrevistas</h2>
+      <p>Contenido de entrevistas...</p>
+    </div>
+    <div id="redes" className="content-section">
+      <h2>Redes Sociales</h2>
+      <p>Contenido de redes sociales...</p>
+    </div>
+    <div id="eventos" className="content-section">
+      <h2>Eventos</h2>
+      <p>Contenido de eventos...</p>
+    </div>
+    <GenreSections />
+    <Footer />
+  </div>
 );
 
 export default Home;

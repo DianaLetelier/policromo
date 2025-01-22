@@ -1,13 +1,15 @@
 import React from 'react';
+import '../styles/Navigation.css';
 
-const Navigation = () => (
-  <nav className="navigation">
-    {['Metal', 'Pop', 'Rock', 'Punk', 'Indie', 'Electronic'].map((genre) => (
-      <div key={genre} className="nav-item">
-        {genre}
-      </div>
-    ))}
-  </nav>
-);
+const Navigation = () => {
+  return (
+    <nav className="header-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#generos">Géneros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  );
+};
 
 export default Navigation;
+

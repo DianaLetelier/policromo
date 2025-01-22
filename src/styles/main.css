@@ -1,8 +1,10 @@
+/* src/styles/main.css */
+
 /* Estilos generales */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #111;
   color: white;
 }
@@ -11,122 +13,40 @@ body {
   text-align: center;
 }
 
-/* Header */
-/* Estilo para el contenedor del encabezado */
-.header {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 200px; /* Ajusta según lo que necesites */
-  background-color: black;
-  padding: 1.5rem;
-  text-transform: uppercase;
+/* Secciones */
+.section {
+  padding: 3rem 1rem;
+  background-color: #222;
+  color: white;
+  margin-bottom: 2rem;
 }
 
-/* Estilo para el título del encabezado */
-.header-title {
-  display: inline-flex; /* Asegura que "POLI" y "CROMO" estén en la misma línea */
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 1rem;
-  gap: 0.2rem; /* Espacio entre "POLI" y "CROMO" */
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Estilo para "POLI" */
-.poli {
-  color: white; /* Blanco sólido para "POLI" */
+.section p {
+  font-size: 1.2rem;
 }
 
-/* Estilo para "CROMO" */
-.cromo {
-  background: linear-gradient(90deg, white 0%, pink 50%, magenta 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-
-
-
-/* Navegación */
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
+/* Espaciado para secciones específicas */
+#all-genres {
   background-color: #333;
 }
 
-.nav-item {
-  padding: 0.5rem 1rem;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s;
+#interviews {
+  background-color: #444;
 }
 
-.nav-item:hover {
+#socials {
   background-color: #555;
 }
 
-/* Contenedor principal de las secciones de géneros */
-.genres {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 columnas */
-  gap: 1rem;
-  padding: 2rem;
+#events {
+  background-color: #666;
 }
 
-/* Sección individual para cada género */
-.genre-section {
-  position: relative;
-  height: 500px; /* Mayor altura para replicar el diseño vertical */
-  border-radius: 15px;
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
-}
-
-/* Imagen dentro de cada sección */
-.genre-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Mantiene proporción sin distorsión */
-  opacity: 0.7;
-  transition: opacity 0.3s, transform 0.3s;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%); /* Efecto de recorte de barra */
-}
-
-/* Texto del género */
-.genre-section h2 {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Hover: Efecto de ampliación */
-.genre-section:hover {
-  transform: scale(1.05);
-}
-
-.genre-section:hover img {
-  opacity: 1;
-  transform: scale(1.1); /* Ampliación */
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%); /* Ajuste de barra en hover */
-}
-
-/* Footer */
-.footer {
-  background-color: black;
-  padding: 1rem;
-  color: white;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 2rem;
+html {
+  scroll-behavior: smooth;
 }

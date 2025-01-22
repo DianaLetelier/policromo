@@ -1,39 +1,46 @@
+// src/components/Header.js
 import React from 'react';
-import './Header.css'; // Importamos los estilos específicos
+import '../styles/Header.css';
 
-const Header = () => (
-  <header className="header">
-    {/* Puntos de colores en horizontal */}
-    <div className="header-icons">
-      <div className="circle" style={{ backgroundColor: '#FF8C00' }}></div> {/* Naranja */}
-      <div className="circle" style={{ backgroundColor: '#FFD700' }}></div> {/* Amarillo Claro */}
-      <div className="circle" style={{ backgroundColor: '#FFFF00' }}></div> {/* Amarillo */}
-      <div className="circle" style={{ backgroundColor: '#32CD32' }}></div> {/* Verde */}
-      <div className="circle" style={{ backgroundColor: '#1E90FF' }}></div> {/* Azul */}
-    </div>
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="header-icons">
+        <div className="circle" style={{ backgroundColor: 'orange' }}></div>
+        <div className="circle" style={{ backgroundColor: 'yellow' }}></div>
+        <div className="circle" style={{ backgroundColor: 'lime' }}></div>
+        <div className="circle" style={{ backgroundColor: 'aqua' }}></div>
+        <div className="circle" style={{ backgroundColor: 'blue' }}></div>
+      </div>
 
-    {/* Título centrado */}
-    <h1 className="header-title">
-      <span className="poli">POLI</span>
-      <span className="cromo">CROMO</span>
-    </h1>
+      <div className="header-content">
+        <h1 className="header-title">
+          <span className="poli">POLI</span>
+          <span className="cromo">CROMO</span>
+        </h1>
 
-    {/* Navegación y opciones */}
-    <div className="header-right">
-      <nav className="header-nav">
-        <a href="#">Géneros</a>
-        <a href="#">Entrevistas</a>
-        <a href="#">Redes Sociales</a>
-        <a href="#">Eventos</a>
-      </nav>
-      <div className="header-options">
+        <nav className="header-nav">
+          <a href="#all-genres">Géneros</a>
+          <a href="#interviews">Entrevistas</a>
+          <a href="#socials">Redes Sociales</a>
+          <a href="#events">Eventos</a>
+        </nav>
+      </div>
+
+      <div className="header-right">
         <button>Contáctanos</button>
       </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
 
 export default Header;
+
+
+
+
+
+
 
 
 

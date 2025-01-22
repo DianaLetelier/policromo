@@ -1,0 +1,88 @@
+/* src/styles/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  position: relative;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.header-content {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-flex;
+  gap: 0.5rem;
+  font-family: 'Arial', sans-serif; /* Asegura la fuente en el título */
+}
+
+.poli {
+  color: white;
+}
+
+.cromo {
+  background: linear-gradient(90deg, pink 0%, magenta 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-family: 'Arial', sans-serif; /* Fuente para navegación */
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: pink;
+}
+
+.header-right {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.header-right button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Arial', sans-serif; /* Asegura la fuente en el botón */
+}
+
+.header-right button:hover {
+  background-color: white;
+  color: black;
+}
