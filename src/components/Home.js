@@ -9,7 +9,7 @@ const Home = () => (
     <Header />
     <div id="entrevistas" className="content-section">
       <h2>Entrevistas</h2>
-      <p>Contenido de entrevistas...</p>
+      <p>Czontenido de entrevistas...</p>
     </div>
     <div id="redes" className="content-section">
       <h2>Redes Sociales</h2>

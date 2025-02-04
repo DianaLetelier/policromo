@@ -7,10 +7,13 @@ module.exports = {
     filename: 'main.js',
   },
   devServer: {
-    static: path.join(__dirname, 'public'),
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     compress: true,
     port: 3000,
-    allowedHosts: 'all',
+    hot: true,
+    open: true,
   },
   module: {
     rules: [
@@ -25,10 +28,13 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
 };
-

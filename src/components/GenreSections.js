@@ -1,32 +1,53 @@
-// src/components/GenreSections.js
 import React from 'react';
-import '../styles/GenreSections.css';
+import '../styles/GenreSections.css'; // Ruta corregida
 
-const genres = [
-  { title: 'Metal', img: '/images/metal.png' },
-  { title: 'Pop', img: '/images/pop.jpg' },
-  { title: 'Rock', img: '/images/rock.jpg' },
-  { title: 'Punk', img: '/images/punk.jpg' },
-  { title: 'Indie', img: '/images/indie.jpg' },
-  { title: 'Electronic', img: '/images/electronic.jpg' },
-];
-
-const GenreSections = () => (
-  <section className="genres">
-    {genres.map((genre, index) => (
-      <div className="genre-section" key={index}>
-        <div className="lines-overlay">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="line" />
-          ))}
+const GenreSections = () => {
+  return (
+    <div id="generos" className="genres-container">
+      <div className="genre metal">
+        <div className="genre-content">
+          <div className="genre-icon skull"></div>
+          <h3>METAL</h3>
+          <div className="genre-lines"></div>
         </div>
-        <img src={genre.img} alt={genre.title} />
-        <h2>{genre.title}</h2>
       </div>
-    ))}
-  </section>
-);
+      <div className="genre rock">
+        <div className="genre-content">
+          <div className="genre-icon band"></div>
+          <h3>ROCK</h3>
+          <div className="genre-lines"></div>
+        </div>
+      </div>
+      <div className="genre pop">
+        <div className="genre-content">
+          <div className="genre-icon microphone"></div>
+          <h3>POP</h3>
+          <div className="genre-lines"></div>
+        </div>
+      </div>
+      <div className="genre punk">
+        <div className="genre-content">
+          <div className="genre-icon punk-icon"></div>
+          <h3>PUNK</h3>
+          <div className="genre-lines"></div>
+        </div>
+      </div>
+      <div className="genre indie">
+        <div className="genre-content">
+          <div className="genre-icon guitar"></div>
+          <h3>INDIE</h3>
+          <div className="genre-lines"></div>
+        </div>
+      </div>
+      <div className="genre electronic">
+        <div className="genre-content">
+          <div className="genre-icon electronic-icon"></div>
+          <h3>ELECTRONIC</h3>
+          <div className="genre-lines"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default GenreSections;
-
-

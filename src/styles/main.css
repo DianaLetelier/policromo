@@ -1,52 +1,74 @@
-/* src/styles/main.css */
+:root {
+  --neon-pink: #FF69B4;
+  --neon-purple: #9B30FF;
+  --neon-green: #39FF14;
+  --neon-red: #FF3131;
+  --neon-yellow: #FFD700;
+  --dark-bg: #0a0a0a;
+  --bg-pink: #E0B0FF; /* Color rosado del fondo */
+}
 
-/* Estilos generales */
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #111;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg-pink);
   color: white;
+  scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
 .app {
-  text-align: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #000000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Secciones */
-.section {
-  padding: 3rem 1rem;
-  background-color: #222;
-  color: white;
-  margin-bottom: 2rem;
+main {
+  padding: 20px;
+  background: linear-gradient(
+    45deg,
+    rgba(10, 10, 10, 0.9),
+    rgba(20, 20, 20, 0.9)
+  );
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--neon-pink);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
 }
 
-.section p {
-  font-size: 1.2rem;
+/* Efectos de hover y elementos interactivos */
+a, button {
+  color: var(--neon-pink);
+  transition: all 0.3s ease;
 }
 
-/* Espaciado para secciones específicas */
-#all-genres {
-  background-color: #333;
+a:hover, button:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
 }
 
-#interviews {
-  background-color: #444;
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-#socials {
-  background-color: #555;
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
 }
 
-#events {
-  background-color: #666;
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 5px;
 }
 
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-pink);
 }
